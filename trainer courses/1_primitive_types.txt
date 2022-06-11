@@ -1,0 +1,81 @@
+Revision
+->Primitive Types:
+- string 
+- numbers (int, float, complex)
+- boolean 
+
+-> use # to indicate comments (code that should not be executed)
+
+->Variable names should be descriptive and meaningful 
+  - is_student 
+  - course_name 
+
+-> Strings 
+    - use either double or single quotes 
+    - use triple quotes to type a string in multiple lines
+    - use the len() function to get the number of characters in a string 
+    - string[index] returns the character at index
+    - string[-1] returns the first character from the END of the string 
+    - string[0,3] returns substring from start to character at position 2 (3-1)
+    - string[:3] is equivalent to previous command 
+    - string[:] returns a copy of the original string 
+
+
+
+Today: 
+-> Escape Sequences
+    - use double quotes, so  you can use single quotes inside the string without problems
+    - OR use backslash (\) to escape characters that appear in a string
+    - if you want to include a backslash in your string, you must prefix it with another backslash (\\)
+    - \n indicates new line 
+
+-> Formatted strings
+    - Old way: print(first_name + " " + last_name)
+    - New way print(f"{first_name} {last_name}")
+
+-> String methods
+    - unlike the len() which is general, string methods are specific to strings. 
+    - Everything in python is an object
+    - create string variable, type name with dot at the end to see list of methods
+    - Every method returns a new string, and doesnt change the initial string
+    - string.upper() returns string in upper case. Same analogy for string.lower()
+    - string.capital() will capitalize / string.title() will convert first letters of each word to capitals
+    - string.strip() will remove empty spaces from left & right of string 
+    - string.lstrip() is left-strip, and string.rstrip() is right strip
+    - string.find("text") finds the index of a character or text in a string. Ruturns -1 if string is not found 
+    - string.replace("target", "new") 
+    - Use (in) expression To check existence of characters in string: print("char" in string) / print("char" not in string) is the opposite
+
+-> Numbers (Operators) 
+    - print(2 + 3), print(3 - 1), print(5 * 8)
+    - print(10/3) returns answer with decimal points (3.333333)
+    - print(10//3) returns an integer 
+    - print(10 % 3) returns modulus 
+    - print (10 ** 3) returns exponent 
+    - x += 3 augments x by 3 
+
+    - ///round(2.8) returns 3 
+    - abs(-2.3) returns 2.3 
+
+    For more complex calculations, use the math module 
+    - This must be imported at top of the file. (import math)
+    - then use the methods on the math object 
+    - math.ceil(1.2) returns 2 
+    - google "python 3 math module" to see all the functions in the math module 
+
+
+Exercise: play with 3 functions in the math module. 
+
+-> Type Conversion
+    - int(value) converts value to integer
+    - float(value) " " "           float 
+    - bool(value) .......          boolean 
+    - str(value)                   string 
+
+    - Falsy values in python are:
+        - ""  (empty space) 
+        - 0 
+        - None 
+        Anything else will be True 
+
+
